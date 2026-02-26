@@ -8,7 +8,7 @@ import siteData from '../data/site.json';
 <nav class="navbar" id="navbar">
   <div class="navbar__inner container">
     <a href="#hero" class="navbar__brand">
-      <img src="/images/logo-spolecne.png" alt="Společně" class="navbar__logo" />
+      <img src={`${import.meta.env.BASE_URL}images/logo-spolecne.png`} alt="Společně" class="navbar__logo" />
     </a>
 
     <button class="navbar__toggle" id="navToggle" aria-label="Otevřít menu" aria-expanded="false">
