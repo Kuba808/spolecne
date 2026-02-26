@@ -1,0 +1,163 @@
+[
+    {
+        "position": 1,
+        "name": "Jan Školník",
+        "occupation": "podnikatel",
+        "photo": "/images/candidates/placeholder.svg",
+        "isLeader": true
+    },
+    {
+        "position": 2,
+        "name": "Marie Dvořáková",
+        "occupation": "lékařka",
+        "photo": "/images/candidates/placeholder.svg",
+        "isLeader": false
+    },
+    {
+        "position": 3,
+        "name": "Petr Novák",
+        "occupation": "učitel",
+        "photo": "/images/candidates/placeholder.svg",
+        "isLeader": false
+    },
+    {
+        "position": 4,
+        "name": "Eva Svobodová",
+        "occupation": "zdravotní sestra",
+        "photo": "/images/candidates/placeholder.svg",
+        "isLeader": false
+    },
+    {
+        "position": 5,
+        "name": "Tomáš Krejčí",
+        "occupation": "živnostník",
+        "photo": "/images/candidates/placeholder.svg",
+        "isLeader": false
+    },
+    {
+        "position": 6,
+        "name": "Lucie Marková",
+        "occupation": "sociální pracovnice",
+        "photo": "/images/candidates/placeholder.svg",
+        "isLeader": false
+    },
+    {
+        "position": 7,
+        "name": "Martin Horák",
+        "occupation": "inženýr",
+        "photo": "/images/candidates/placeholder.svg",
+        "isLeader": false
+    },
+    {
+        "position": 8,
+        "name": "Jana Procházková",
+        "occupation": "ekonomka",
+        "photo": "/images/candidates/placeholder.svg",
+        "isLeader": false
+    },
+    {
+        "position": 9,
+        "name": "Vladimír Černý",
+        "occupation": "farmář",
+        "photo": "/images/candidates/placeholder.svg",
+        "isLeader": false
+    },
+    {
+        "position": 10,
+        "name": "Hana Veselá",
+        "occupation": "lékárnice",
+        "photo": "/images/candidates/placeholder.svg",
+        "isLeader": false
+    },
+    {
+        "position": 11,
+        "name": "David Fiala",
+        "occupation": "architekt",
+        "photo": "/images/candidates/placeholder.svg",
+        "isLeader": false
+    },
+    {
+        "position": 12,
+        "name": "Alena Kratochvílová",
+        "occupation": "knihovnice",
+        "photo": "/images/candidates/placeholder.svg",
+        "isLeader": false
+    },
+    {
+        "position": 13,
+        "name": "Josef Marek",
+        "occupation": "řemeslník",
+        "photo": "/images/candidates/placeholder.svg",
+        "isLeader": false
+    },
+    {
+        "position": 14,
+        "name": "Kateřina Šimková",
+        "occupation": "právnička",
+        "photo": "/images/candidates/placeholder.svg",
+        "isLeader": false
+    },
+    {
+        "position": 15,
+        "name": "Pavel Růžička",
+        "occupation": "hasič",
+        "photo": "/images/candidates/placeholder.svg",
+        "isLeader": false
+    },
+    {
+        "position": 16,
+        "name": "Markéta Poláková",
+        "occupation": "podnikatelka",
+        "photo": "/images/candidates/placeholder.svg",
+        "isLeader": false
+    },
+    {
+        "position": 17,
+        "name": "Jiří Doležal",
+        "occupation": "elektrikář",
+        "photo": "/images/candidates/placeholder.svg",
+        "isLeader": false
+    },
+    {
+        "position": 18,
+        "name": "Tereza Kopecká",
+        "occupation": "pečovatelka",
+        "photo": "/images/candidates/placeholder.svg",
+        "isLeader": false
+    },
+    {
+        "position": 19,
+        "name": "Miroslav Bartoš",
+        "occupation": "klempíř",
+        "photo": "/images/candidates/placeholder.svg",
+        "isLeader": false
+    },
+    {
+        "position": 20,
+        "name": "Lenka Urbanová",
+        "occupation": "učitelka MŠ",
+        "photo": "/images/candidates/placeholder.svg",
+        "isLeader": false
+    },
+    {
+        "position": 21,
+        "name": "Radek Vlček",
+        "occupation": "automechanik",
+        "photo": "/images/candidates/placeholder.svg",
+        "isLeader": false
+    },
+    {
+        "position": 22,
+        "name": "Simona Němcová",
+        "occupation": "účetní",
+        "photo": "/images/candidates/placeholder.svg",
+        "isLeader": false
+    },
+    {
+        "position": 23,
+        "name": "Ondřej Beneš",
+        "occupation": "programátor",
+        "photo": "/images/candidates/placeholder.svg",
+        "isLeader": false
+    }
+]

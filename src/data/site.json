@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "Společně pro Broumov",
+    "description": "Sdružení nezávislých kandidátů pro lepší Broumov. Nejsme politici, ale lékaři, živnostníci, učitelé a sousedé.",
+    "ogImage": "/images/og-image.jpg"
+  },
+  "hero": {
+    "headline": "Společně pro Broumov",
+    "subheadline": "Město, pod které se mohu podepsat",
+    "btnPrimary": "Podepsat petici",
+    "btnSecondary": "Náš program"
+  },
+  "about": {
+    "text": "Nejsme politici, ale lékaři, živnostníci, učitelé a sousedé, kteří mají rádi Broumov a chtějí, aby vzkvétal. Proto víme, jak z Broumova udělat zdravé a fungující město. Město, které se nestará jen o papíry, ale o skutečné potřeby svých obyvatel. Jsme lidé, kteří v Broumově žijí a kterým záleží na tom, co bude zítra."
+  },
+  "petition": {
+    "title": "Sbíráme podpisy Broumováků",
+    "text": "Jsme sdružení nezávislých kandidátů, proto podle zákona potřebujeme vaše podpisy, abychom mohli kandidovat do městského zastupitelstva. Chceme přinést změnu, ale bez vaší podpory to nepůjde.",
+    "deadline": "Čas na sběr máme jen do 30. dubna 2026."
+  },
+  "facebook": {
+    "url": "https://www.facebook.com/zazdravibroumov",
+    "label": "Sledujte nás na Facebooku"
+  },
+  "footer": {
+    "copyright": "© 2026 Společně – Sdružení nezávislých kandidátů"
+  }
+}

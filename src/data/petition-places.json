@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Městský úřad Broumov",
+        "address": "Třída Masarykova 239, Broumov",
+        "lat": 50.5862,
+        "lng": 16.3322,
+        "hours": "Po–Pá 8:00–17:00"
+    },
+    {
+        "name": "Infocentrum Broumov",
+        "address": "Náměstí Míru, Broumov",
+        "lat": 50.5855,
+        "lng": 16.3340,
+        "hours": "Po–Ne 9:00–17:00"
+    },
+    {
+        "name": "Kulturní dům Broumov",
+        "address": "Přadlácká 75, Broumov",
+        "lat": 50.5870,
+        "lng": 16.3300,
+        "hours": "Po–Pá 10:00–18:00"
+    }
+]

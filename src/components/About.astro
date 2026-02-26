@@ -1,0 +1,40 @@
+---
+/**
+ * About – introduction to the group
+ */
+import siteData from '../data/site.json';
+---
+
+<section class="section" id="about">
+  <div class="container">
+    <div class="about">
+      <div class="about__badge">🌿</div>
+      <h2 class="about__title">Kdo jsme</h2>
+      <p class="about__text">{siteData.about.text}</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about__badge {
+    font-size: 3rem;
+    margin-bottom: var(--space-sm);
+  }
+
+  .about__title {
+    margin-bottom: var(--space-md);
+  }
+
+  .about__text {
+    font-size: 1.15rem;
+    line-height: 1.85;
+    color: var(--color-dark);
+    margin: 0 auto;
+  }
+</style>

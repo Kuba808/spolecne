@@ -1,0 +1,49 @@
+---
+/**
+ * Candidates – responsive grid of all 23 candidates
+ */
+import CandidateCard from './CandidateCard.astro';
+import candidates from '../data/candidates.json';
+---
+
+<section class="section" id="candidates">
+  <div class="container">
+    <div class="section__header">
+      <h2>Naši kandidáti</h2>
+      <p>23 lidí, kteří v Broumově žijí a chtějí ho změnit k lepšímu</p>
+    </div>
+
+    <!-- Leader card highlighted -->
+    {candidates.filter(c => c.isLeader).map(c => (
+      <div class="candidates__leader">
+        <CandidateCard {...c} />
+      </div>
+    ))}
+
+    <div class="candidates__grid">
+      {candidates.filter(c => !c.isLeader).map(c => (
+        <CandidateCard {...c} />
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .candidates__leader {
+    max-width: 280px;
+    margin: 0 auto var(--space-lg);
+  }
+
+  .candidates__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--space-md);
+  }
+
+  @media (max-width: 480px) {
+    .candidates__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-sm);
+    }
+  }
+</style>

@@ -1,0 +1,141 @@
+---
+/**
+ * Petition – CTA + map with petition signing locations
+ * Uses Leaflet.js via CDN for the interactive map
+ */
+import siteData from '../data/site.json';
+import places from '../data/petition-places.json';
+---
+
+<section class="section" id="petition">
+  <div class="container">
+    <div class="section__header">
+      <h2>{siteData.petition.title}</h2>
+      <p>{siteData.petition.text}</p>
+      <p class="petition__deadline">{siteData.petition.deadline}</p>
+    </div>
+
+    <div class="petition__content">
+      <div class="petition__map-wrap">
+        <div id="petition-map" class="petition__map"></div>
+      </div>
+
+      <div class="petition__places">
+        <h3>Petiční místa</h3>
+        <ul class="petition__list">
+          {places.map((place) => (
+            <li class="petition__place">
+              <strong>{place.name}</strong>
+              <span>{place.address}</span>
+              <span class="petition__hours">🕐 {place.hours}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Leaflet CSS & JS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script is:inline src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script is:inline define:vars={{ places }}>
+  document.addEventListener('DOMContentLoaded', () => {
+    const map = L.map('petition-map').setView([50.5862, 16.3330], 15);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      maxZoom: 18,
+    }).addTo(map);
+
+    const greenIcon = L.divIcon({
+      className: 'custom-marker',
+      html: '<div style="background:#AED24B;width:28px;height:28px;border-radius:50%;border:3px solid #0A2540;display:flex;align-items:center;justify-content:center;font-size:14px;box-shadow:0 2px 8px rgba(0,0,0,0.3);">✍️</div>',
+      iconSize: [28, 28],
+      iconAnchor: [14, 14],
+    });
+
+    places.forEach(place => {
+      L.marker([place.lat, place.lng], { icon: greenIcon })
+        .addTo(map)
+        .bindPopup(`<strong>${place.name}</strong><br>${place.address}<br>${place.hours}`);
+    });
+  });
+</script>
+
+<style>
+  .petition__deadline {
+    color: var(--color-navy);
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-top: var(--space-xs);
+  }
+
+  .petition__content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--space-lg);
+    align-items: start;
+  }
+
+  .petition__map-wrap {
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    border: 2px solid rgba(10, 37, 64, 0.2);
+  }
+
+  .petition__map {
+    height: 420px;
+    width: 100%;
+  }
+
+  .petition__places h3 {
+    margin-bottom: var(--space-sm);
+  }
+
+  .petition__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .petition__place {
+    background: var(--color-white);
+    border-radius: var(--radius-sm);
+    padding: var(--space-sm) var(--space-md);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    border-left: 4px solid var(--color-navy);
+  }
+
+  .petition__place strong {
+    color: var(--color-navy);
+    font-size: 1rem;
+  }
+
+  .petition__place span {
+    font-size: 0.9rem;
+    color: var(--color-dark);
+    opacity: 0.7;
+  }
+
+  .petition__hours {
+    font-weight: 500;
+    opacity: 0.85 !important;
+  }
+
+  @media (max-width: 768px) {
+    .petition__content {
+      grid-template-columns: 1fr;
+    }
+
+    .petition__map {
+      height: 300px;
+    }
+  }
+</style>

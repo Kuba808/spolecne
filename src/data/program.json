@@ -1,0 +1,37 @@
+[
+    {
+        "icon": "🏥",
+        "title": "Moderní poliklinika a motivace pro mladé lékaře",
+        "description": "Zajistíme dostupnou zdravotní péči a vytvoříme podmínky, aby k nám mladí lékaři chtěli přicházet a zůstávat zde."
+    },
+    {
+        "icon": "💊",
+        "title": "Lékárna, která vás nenechá ve štychu",
+        "description": "Prosadíme víkendový provoz a zřízení nonstop okénka pro naléhavé případy."
+    },
+    {
+        "icon": "🏠",
+        "title": "Reprezentativní bydlení pro každého",
+        "description": "Připravíme projekty pro družstevní a nájemní bydlení, aby mladé rodiny i senioři měli kde důstojně žít."
+    },
+    {
+        "icon": "🤝",
+        "title": "Pomoc těm, kteří chtějí nový začátek",
+        "description": "Podpoříme existující služby, které pomáhají s oddlužením. Pomocná ruka se vyplatí celému městu."
+    },
+    {
+        "icon": "🌍",
+        "title": "Lepší soužití díky romskému koordinátorovi",
+        "description": "Zřídíme stálou pozici koordinátora pro efektivní komunikaci, řešení problémů a prevenci napětí."
+    },
+    {
+        "icon": "❤️",
+        "title": "Důstojné stáří v domácím prostředí",
+        "description": "Rozšíříme kapacitu pečovatelských služeb, aby naši senioři mohli zůstávat co nejdéle doma."
+    },
+    {
+        "icon": "💰",
+        "title": "Peníze z turismu investujeme do Broumova",
+        "description": "Zvýšíme turistický poplatek a každý vybraný haléř investujeme do konkrétních oprav a projektů pro místní obyvatele."
+    }
+]

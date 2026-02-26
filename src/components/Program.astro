@@ -1,0 +1,36 @@
+---
+/**
+ * Program – all program points from JSON
+ */
+import ProgramCard from './ProgramCard.astro';
+import program from '../data/program.json';
+---
+
+<section class="section section--dark" id="program">
+  <div class="container">
+    <div class="section__header">
+      <h2>Náš program</h2>
+      <p>Navrhli jsme konkrétní vylepšení pro Broumov. Ta nejdůležitější jsou:</p>
+    </div>
+
+    <div class="program__grid">
+      {program.map((item) => (
+        <ProgramCard {...item} />
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .program__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--space-md);
+  }
+
+  @media (max-width: 480px) {
+    .program__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

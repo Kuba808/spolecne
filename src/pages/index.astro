@@ -1,0 +1,25 @@
+---
+/**
+ * index.astro – main one-page layout assembling all sections
+ */
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Candidates from '../components/Candidates.astro';
+import Program from '../components/Program.astro';
+import Petition from '../components/Petition.astro';
+import Footer from '../components/Footer.astro';
+
+import siteData from '../data/site.json';
+---
+
+<Layout title={siteData.meta.title} description={siteData.meta.description}>
+  <Navbar />
+  <Hero />
+  <About />
+  <Candidates />
+  <Program />
+  <Petition />
+  <Footer />
+</Layout>

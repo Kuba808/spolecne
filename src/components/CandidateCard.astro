@@ -1,0 +1,127 @@
+---
+/**
+ * CandidateCard – individual candidate display
+ */
+interface Props {
+  name: string;
+  position: number;
+  occupation: string;
+  photo: string;
+  isLeader: boolean;
+}
+
+const { name, position, occupation, photo, isLeader } = Astro.props;
+const initials = name.split(' ').map(n => n[0]).join('');
+---
+
+<div class:list={['candidate', { 'candidate--leader': isLeader }]}>
+  <div class="candidate__photo">
+    <div class="candidate__avatar" aria-label={name}>
+      {initials}
+    </div>
+    <span class="candidate__position">{position}.</span>
+  </div>
+  <div class="candidate__info">
+    <h3 class="candidate__name">{name}</h3>
+    <p class="candidate__occupation">{occupation}</p>
+    {isLeader && <span class="candidate__badge">Lídr kandidátky</span>}
+  </div>
+</div>
+
+<style>
+  .candidate {
+    background: var(--color-white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: all var(--transition);
+    text-align: center;
+    padding: var(--space-md) var(--space-sm) var(--space-sm);
+  }
+
+  .candidate:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .candidate--leader {
+    border: 2px solid var(--color-navy);
+    position: relative;
+  }
+
+  .candidate__photo {
+    position: relative;
+    margin-bottom: var(--space-sm);
+  }
+
+  .candidate__avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-navy), var(--color-navy-light));
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    letter-spacing: 0.05em;
+  }
+
+  .candidate--leader .candidate__avatar {
+    width: 110px;
+    height: 110px;
+    font-size: 1.7rem;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    color: var(--color-navy);
+  }
+
+  .candidate__position {
+    position: absolute;
+    top: -4px;
+    right: calc(50% - 55px);
+    background: var(--color-primary);
+    color: var(--color-navy);
+    font-size: 0.75rem;
+    font-weight: 700;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .candidate--leader .candidate__position {
+    right: calc(50% - 65px);
+    background: var(--color-navy);
+    color: var(--color-primary);
+  }
+
+  .candidate__name {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    color: var(--color-navy);
+  }
+
+  .candidate__occupation {
+    font-size: 0.85rem;
+    color: var(--color-dark);
+    opacity: 0.65;
+    margin-bottom: 0.5rem;
+  }
+
+  .candidate__badge {
+    display: inline-block;
+    background: var(--color-navy);
+    color: var(--color-light);
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+</style>
