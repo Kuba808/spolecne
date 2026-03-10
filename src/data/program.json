@@ -1,37 +1,47 @@
 [
     {
         "icon": "🏥",
-        "title": "Moderní poliklinika a motivace pro mladé lékaře",
-        "description": "Zajistíme dostupnou zdravotní péči a vytvoříme podmínky, aby k nám mladí lékaři chtěli přicházet a zůstávat zde."
-    },
-    {
-        "icon": "💊",
-        "title": "Lékárna, která vás nenechá ve štychu",
-        "description": "Prosadíme víkendový provoz a zřízení nonstop okénka pro naléhavé případy."
+        "title": "Zdraví jako základní jistota",
+        "description": "Zajistíme stabilitu zdravotní péče v poliklinice a dostupné lékárenské služby, aby rodiny i senioři měli v Broumově jistotu péče, kterou potřebují. Moderní zázemí pro lékaře vnímáme jako základní standard našeho města."
     },
     {
         "icon": "🏠",
-        "title": "Reprezentativní bydlení pro každého",
-        "description": "Připravíme projekty pro družstevní a nájemní bydlení, aby mladé rodiny i senioři měli kde důstojně žít."
-    },
-    {
-        "icon": "🤝",
-        "title": "Pomoc těm, kteří chtějí nový začátek",
-        "description": "Podpoříme existující služby, které pomáhají s oddlužením. Pomocná ruka se vyplatí celému městu."
-    },
-    {
-        "icon": "🌍",
-        "title": "Lepší soužití díky romskému koordinátorovi",
-        "description": "Zřídíme stálou pozici koordinátora pro efektivní komunikaci, řešení problémů a prevenci napětí."
+        "title": "Dostupné bydlení a důstojný domov",
+        "description": "Podpoříme projekty nájemního a družstevního bydlení, aby mladé rodiny, klíčové profese i senioři měli v Broumově zázemí pro kvalitní a důstojný život."
     },
     {
         "icon": "❤️",
         "title": "Důstojné stáří v domácím prostředí",
-        "description": "Rozšíříme kapacitu pečovatelských služeb, aby naši senioři mohli zůstávat co nejdéle doma."
+        "description": "Rozšíříme kapacity pečovatelských služeb, aby naši senioři mohli zůstávat co nejdéle ve svém přirozeném domácím prostředí s veškerou potřebnou podporou a péčí."
     },
     {
-        "icon": "💰",
-        "title": "Peníze z turismu investujeme do Broumova",
-        "description": "Zvýšíme turistický poplatek a každý vybraný haléř investujeme do konkrétních oprav a projektů pro místní obyvatele."
+        "icon": "🌳",
+        "title": "Systematická péče o veřejný prostor",
+        "description": "Čistota ulic, údržba chodníků a péče o zeleň nesmí být nahodilá, ale dlouhodobě plánovaná. Každodenní kvalita prostředí v našem městě přímo ovlivňuje spokojenost nás všech."
+    },
+    {
+        "icon": "🗣️",
+        "title": "Otevřená a srozumitelná radnice",
+        "description": "Změníme politickou kulturu tím, že budeme rozhodnutí vysvětlovat srozumitelně a s předstihem. Chceme radnici, která hledá řešení pro celek, ne pro jednotlivé zájmové skupiny."
+    },
+    {
+        "icon": "💼",
+        "title": "Partnerství pro práci a podnikání",
+        "description": "Město bude aktivním partnerem všem, kteří u nás tvoří pracovní místa a rozvíjejí místní ekonomiku. Podpora podnikání je pro nás cestou k prosperitě a stabilitě celého regionu."
+    },
+    {
+        "icon": "🤝",
+        "title": "Pomocná ruka pro nový začátek",
+        "description": "Podpoříme služby pomáhající lidem v tísni s oddlužením a návratem do aktivního pracovního života. Věříme v důstojnost a odpovědnost – pomocná ruka se vyplatí stabilitě celého Broumova."
+    },
+    {
+        "icon": "✨",
+        "title": "Město s budoucností pro mladé",
+        "description": "Naším cílem je vytvářet reálné důvody, proč by se mladá generace měla do Broumova vracet nebo se sem stěhovat. Broumov má obrovský potenciál, který proměníme v atraktivní místo pro život."
+    },
+    {
+        "icon": "🏛️",
+        "title": "Silný a slyšitelný hlas regionu",
+        "description": "Nebudeme jen pasivně čekat na dotace, ale budeme aktivně prosazovat priority Broumova v Hradci, Praze i Bruselu. Starosta a jeho tým musí být silnými reprezentanty města navenek."
     }
 ]
