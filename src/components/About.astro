@@ -10,7 +10,7 @@ import siteData from '../data/site.json';
     <div class="about">
       <div class="about__badge">🌿</div>
       <h2 class="about__title">Kdo jsme</h2>
-      <p class="about__text">{siteData.about.text}</p>
+      <p class="about__text" set:html={siteData.about.text}></p>
     </div>
   </div>
 </section>
