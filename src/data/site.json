@@ -6,12 +6,32 @@
   },
   "hero": {
     "headline": "Společně za zdravý Broumov.",
-    "subheadline": "Jsme tým, který neslibuje zázraky, ale nabízí zkušenosti a jasný směr. Chceme funkční město se stabilní zdravotní péčí, dostupným bydlením a otevřenou komunikací pro všechny generace.",
+    "subheadline": "Jsme tým, který neslibuje zázraky, ale nabízí zkušenosti a jasný směr.<br />Chceme město, které dobře funguje – se stabilní zdravotní péčí, dostupným bydlením, otevřenou komunikací a prostorem pro zapojení všech generací.",
     "btnPrimary": "Podepsat petici",
     "btnSecondary": "Náš program"
   },
   "about": {
-    "text": "Společně věříme, že naše město potřebuje víc než jen reagovat na aktuální dotace – potřebuje dlouhodobý plán a stabilitu. Navazujeme na roky práce a konkrétních výsledků, které potvrdily, že když se lidé spojí pro dobrou věc, dokážou víc, než si původně mysleli. Naší prioritou je celkové „zdraví Broumova“: od zajištění důstojných podmínek pro lékaře a podpory seniorů přes bydlení pro klíčové profese až po srozumitelné vysvětlování městských rozhodnutí. Nenabízíme líbivá hesla, ale poctivou týmovou práci a odpovědnost za budoucnost našeho společného domova."
+    "text": "Společně věříme, že naše město potřebuje víc než jen reagovat na aktuální problémy nebo dotace. Potřebuje dlouhodobý plán a stabilitu. Navazujeme na roky práce a konkrétních výsledků, které potvrdily, že když se lidé spojí pro dobrou věc, dokážou víc, než si původně mysleli.<br />Naší prioritou je celkové „zdraví Broumova“: od důstojných podmínek pro lékaře, podpory seniorů a prostoru pro mladé přes kvalitní bydlení a tvorbu pracovních míst až po srozumitelné vysvětlování městských rozhodnutí.<br />Nenabízíme líbivá hesla, ale poctivou práci, spolupráci a odpovědnost za budoucnost našeho města."
+  },
+  "priorities": {
+    "title": "Naše tři priority",
+    "items": [
+      {
+        "icon": "🏥",
+        "title": "Zdravé a bezpečné město",
+        "text": "Zdravotní péče, důstojné stáří a kvalitní veřejný prostor jsou základní jistotou každodenního života."
+      },
+      {
+        "icon": "🏘️",
+        "title": "Město, kde se dobře žije a pracuje",
+        "text": "Dostupné bydlení, pracovní příležitosti a podpora podnikání pomohou Broumovu zůstat místem, kde lidé chtějí žít."
+      },
+      {
+        "icon": "🗣️",
+        "title": "Otevřená radnice a spolupracující město",
+        "text": "Chceme radnici, která naslouchá lidem, rozhodnutí vysvětluje a dává prostor zapojení všem generacím."
+      }
+    ]
   },
   "petition": {
     "title": "Váš podpis nám otevře cestu k proměně Broumova",

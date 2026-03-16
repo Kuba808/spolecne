@@ -1,0 +1,35 @@
+---
+/**
+ * Priorities - section showing the 3 main priorities
+ */
+import ProgramCard from './ProgramCard.astro';
+import siteData from '../data/site.json';
+---
+
+<section class="section" id="priorities">
+  <div class="container">
+    <div class="section__header">
+      <h2>{siteData.priorities.title}</h2>
+    </div>
+
+    <div class="priorities__grid">
+      {siteData.priorities.items.map((item) => (
+        <ProgramCard icon={item.icon} title={item.title} description={item.text} />
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .priorities__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-md);
+  }
+
+  @media (max-width: 480px) {
+    .priorities__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

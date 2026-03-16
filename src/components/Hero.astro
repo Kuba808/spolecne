@@ -9,9 +9,7 @@ import siteData from '../data/site.json';
   <div class="hero__bg"></div>
   <div class="hero__content container">
     <h1 class="hero__headline fade-in-up">{siteData.hero.headline}</h1>
-    <p class="hero__subheadline fade-in-up" style="animation-delay: 0.15s">
-      {siteData.hero.subheadline}
-    </p>
+    <p class="hero__subheadline fade-in-up" style="animation-delay: 0.15s" set:html={siteData.hero.subheadline}></p>
     <div class="hero__actions fade-in-up" style="animation-delay: 0.3s">
       <a href="#petition" class="btn btn--primary">{siteData.hero.btnPrimary}</a>
       <a href="#program" class="btn btn--outline">{siteData.hero.btnSecondary}</a>
