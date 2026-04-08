@@ -16,10 +16,14 @@ const initials = name.split(' ').map(n => n[0]).join('');
 
 <div class:list={['candidate', { 'candidate--leader': isLeader }]}>
   <div class="candidate__photo">
-    <div class="candidate__avatar" aria-label={name}>
-      {initials}
-    </div>
-    <span class="candidate__position">{position}.</span>
+    {photo && !photo.includes('placeholder.svg') ? (
+      <img src={photo} alt={name} class="candidate__avatar candidate__avatar--img" loading="lazy" />
+    ) : (
+      <div class="candidate__avatar" aria-label={name}>
+        {name === '-' ? '' : initials}
+      </div>
+    )}
+    {isLeader && <span class="candidate__position">{position}.</span>}
   </div>
   <div class="candidate__info">
     <h3 class="candidate__name">{name}</h3>
@@ -68,6 +72,11 @@ const initials = name.split(' ').map(n => n[0]).join('');
     font-weight: 700;
     font-family: var(--font-heading);
     letter-spacing: 0.05em;
+  }
+
+  .candidate__avatar--img {
+    background: transparent;
+    object-fit: cover;
   }
 
   .candidate--leader .candidate__avatar {
