@@ -12,12 +12,15 @@ interface Props {
 
 const { name, position, occupation, photo, isLeader } = Astro.props;
 const initials = name.split(' ').map(n => n[0]).join('');
+
+// Oprava cesty o lokální BASE_URL, pokud web neběží v root doméně
+const photoUrl = photo && photo.startsWith('/') ? `${import.meta.env.BASE_URL}${photo.substring(1)}` : photo;
 ---
 
 <div class:list={['candidate', { 'candidate--leader': isLeader }]}>
   <div class="candidate__photo">
     {photo && !photo.includes('placeholder.svg') ? (
-      <img src={photo} alt={name} class="candidate__avatar candidate__avatar--img" loading="lazy" />
+      <img src={photoUrl} alt={name} class="candidate__avatar candidate__avatar--img" loading="lazy" />
     ) : (
       <div class="candidate__avatar" aria-label={name}>
         {name === '-' ? '' : initials}
@@ -75,7 +78,7 @@ const initials = name.split(' ').map(n => n[0]).join('');
   }
 
   .candidate__avatar--img {
-    background: transparent;
+    background: #e8f0d0; /* Jemná zelená barva pozadí */
     object-fit: cover;
   }
 
