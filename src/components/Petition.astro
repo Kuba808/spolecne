@@ -13,6 +13,11 @@ import places from '../data/petition-places.json';
       <h2>{siteData.petition.title}</h2>
       <p>{siteData.petition.text}</p>
       <p class="petition__deadline">{siteData.petition.deadline}</p>
+      <div class="petition__actions">
+        <a href="/260413_Petice_podpis_A4_print.pdf" class="btn btn--primary" download="260413_Petice_podpis_A4_print.pdf" target="_blank">
+          <span>📄</span> Stáhnout petici k podpisu (PDF)
+        </a>
+      </div>
     </div>
 
     <div class="petition__content">
@@ -70,6 +75,12 @@ import places from '../data/petition-places.json';
     font-weight: 700;
     font-size: 1.1rem;
     margin-top: var(--space-xs);
+  }
+  
+  .petition__actions {
+    margin-top: var(--space-md);
+    display: flex;
+    justify-content: center;
   }
 
   .petition__content {
