@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Společně za zdravý Broumov | Stabilita a jasný směr pro naše město",
+    "title": "Společně. Broumov pod který se můžu podepsat.",
     "description": "Nechceme slibovat zázraky, ale funkční město. Společně Broumov je tým, který vrací městu směr: řešíme dostupnost lékařů, bydlení pro mladé i férové jednání.",
     "ogImage": "/images/og-image.jpg"
   },
   "hero": {
-    "headline": "Společně za zdravý Broumov.",
+    "headline": "Společně. Broumov pod který se můžu podepsat.",
     "subheadline": "Jsme tým, který neslibuje zázraky, ale nabízí zkušenosti a jasný směr.<br />Chceme město, které dobře funguje – se stabilní zdravotní péčí, dostupným bydlením, otevřenou komunikací a prostorem pro zapojení všech generací.",
     "btnPrimary": "Podepsat petici",
     "btnSecondary": "Náš program"
@@ -37,6 +37,10 @@
     "title": "Váš podpis nám otevře cestu k proměně Broumova",
     "text": "Jsme nezávislí kandidáti a naše loajalita patří výhradně vám, občanům. Abychom se však mohli ucházet o vaši důvěru v zastupitelstvu, zákon nám ukládá povinnost nasbírat podpisy místních obyvatel. Váš podpis na petici není volebním hlasem, ale šancí pro zdravý a stabilní rozvoj našeho města.",
     "deadline": "Čas nasbírat podpisy máme do 1. září 2026."
+  },
+  "candidates": {
+    "title": "Náš tým",
+    "description": "Broumov má dobrou budoucnost, pokud mu dáme jasný směr, přidají se i další a budeme ho společně držet dlouho."
   },
   "facebook": {
     "url": "https://www.facebook.com/spolecnebroumov",

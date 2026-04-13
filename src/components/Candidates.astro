@@ -4,13 +4,14 @@
  */
 import CandidateCard from './CandidateCard.astro';
 import candidates from '../data/candidates.json';
+import site from '../data/site.json';
 ---
 
 <section class="section" id="candidates">
   <div class="container">
     <div class="section__header">
-      <h2>Naši kandidáti</h2>
-      <p>23 lidí, kteří v Broumově žijí a chtějí ho změnit k lepšímu</p>
+      <h2>{site.candidates.title}</h2>
+      <p>{site.candidates.description}</p>
     </div>
 
     <!-- Leader card highlighted -->
