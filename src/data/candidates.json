@@ -86,7 +86,7 @@
     {
         "position": 13,
         "name": "Helena Sejkorová",
-        "occupation": "zdravotní sestra",
+        "occupation": "správa nemovitostí",
         "photo": "/images/candidates/helena_s.png",
         "isLeader": false
     },
@@ -120,28 +120,28 @@
     },
     {
         "position": 18,
-        "name": "-",
+        "name": "Jan Matouš",
         "occupation": "-",
         "photo": "/images/candidates/placeholder.svg",
         "isLeader": false
     },
     {
         "position": 19,
-        "name": "-",
+        "name": "Beáta Hanousková",
         "occupation": "-",
         "photo": "/images/candidates/placeholder.svg",
         "isLeader": false
     },
     {
         "position": 20,
-        "name": "-",
+        "name": "Martin Kubeček",
         "occupation": "-",
         "photo": "/images/candidates/placeholder.svg",
         "isLeader": false
     },
     {
         "position": 21,
-        "name": "-",
+        "name": "Lukáš Rabas",
         "occupation": "-",
         "photo": "/images/candidates/placeholder.svg",
         "isLeader": false
