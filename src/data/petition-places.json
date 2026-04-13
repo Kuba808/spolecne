@@ -1,23 +1,23 @@
 [
     {
-        "name": "?Místo 1?",
-        "address": "Třída Masarykova 239, Broumov",
+        "name": "Bude upřesněno",
+        "address": "-",
         "lat": 50.5862,
         "lng": 16.3322,
-        "hours": "Po–Pá 8:00–17:00"
+        "hours": "-"
     },
     {
-        "name": "?Místo 2?",
-        "address": "Náměstí Míru, Broumov",
+        "name": "Bude upřesněno",
+        "address": "-",
         "lat": 50.5855,
         "lng": 16.3340,
-        "hours": "Po–Ne 9:00–17:00"
+        "hours": "-"
     },
     {
-        "name": "?Místo 3?",
-        "address": "Přadlácká 75, Broumov",
+        "name": "Bude upřesněno",
+        "address": "-",
         "lat": 50.5870,
         "lng": 16.3300,
-        "hours": "Po–Pá 10:00–18:00"
+        "hours": "-"
     }
 ]

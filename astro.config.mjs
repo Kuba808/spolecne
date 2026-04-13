@@ -3,6 +3,5 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://kuba808.github.io',
-    base: '/spolecne/',
+    site: 'https://www.spolecnebroumov.cz',
 });

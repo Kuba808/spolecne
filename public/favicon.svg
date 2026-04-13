@@ -1,4 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="8" fill="#0A2540"/>
-  <text x="16" y="22" text-anchor="middle" font-family="serif" font-size="18" fill="#AFCC4C" font-weight="bold">Z</text>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <use xlink:href="#_Image1" x="0" y="0" width="32px" height="32px"/>
+    <defs>
+        <image id="_Image1" width="32px" height="32px" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAgACADAREAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAAYHAQII/8QAJhAAAgEDBAICAgMAAAAAAAAAAQIDBQYRAAQSMQchE2EUQRUiUf/EABoBAAICAwAAAAAAAAAAAAAAAAAFAwYBAgT/xAAmEQABBAIBAwMFAAAAAAAAAAABAAIDEQUxBBITIQZRwUFhgZGx/9oADAMBAAIRAxEAPwDmXT1JUxWZZdw3dLMlE2XypDj5ZXcIiE9DJ7P0M6W5DK8XHgGd1E6Gyt2RufpYvOzLgtGeGOt7IRLPn4pUcOj47AI/fvo6zj8rxcgCYHXWxoofG5m0vaYrRGhCu/gl3qfii5LfpO6XbVppJHjIk4t/eNQrZ7HtSMjrVB9SgQZODkTNuPxf4Jv+2uuHywgbSx5NvAb+w6XZ9T2NUhr9LnT8uTdqMNxjdThuRZs8lOSPfemuHxfa5snNic0xPBqvuQfah9VHI+2hp2pfq0qBGhCpHjy1K4tp7i/7crLxb6nSOg2kUBdpOPEkH37BDZxg9arOVyXHPKbj+THbXgeSarfyN2p42Hp6wU3+dIYqx4uoV2VHYJsa07xxyLxKsQysSnv3jI5AHr3/ALpP6beePkpeJG7qjFn9Eefg+6kmFsDjtQjV+XIjQhMll3tcdoNN/C70RxTEGSGRA6MR+8Ho/YxpZkMRxchXfbZGjoqRkjmaWt53pcV3SRNW998scOTFEiBEUns4HZ+znWcfieLjwew2idnZQ+Rz9pd0yUa//9k="/>
+    </defs>
 </svg>
