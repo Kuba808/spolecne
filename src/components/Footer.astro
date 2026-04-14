@@ -20,6 +20,7 @@ import siteData from '../data/site.json';
 
     <div class="footer__bottom">
       <p>{siteData.footer.copyright}</p>
+      <p class="footer__gdpr"><a href="/ochrana-osobnich-udaju">Ochrana osobních údajů (GDPR)</a></p>
     </div>
   </div>
 </footer>
@@ -56,5 +57,20 @@ import siteData from '../data/site.json';
     font-size: 0.85rem;
     opacity: 0.5;
     margin: 0 auto;
+  }
+
+  .footer__bottom .footer__gdpr {
+    opacity: 1;
+    margin-top: 0.75rem;
+  }
+  
+  .footer__gdpr a {
+    text-decoration: underline;
+    opacity: 0.6;
+    transition: opacity var(--transition);
+  }
+  
+  .footer__gdpr a:hover {
+    opacity: 1;
   }
 </style>

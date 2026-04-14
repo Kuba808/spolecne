@@ -1,0 +1,79 @@
+---
+import Layout from './Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import siteData from '../data/site.json';
+
+const { frontmatter } = Astro.props;
+---
+
+<Layout title={`${frontmatter.title} - ${siteData.meta.title}`} description={frontmatter.description || "Zásady ochrany osobních údajů"}>
+  <Navbar />
+  
+  <main class="page-content container">
+    <article class="prose">
+      <slot />
+    </article>
+  </main>
+  
+  <Footer />
+</Layout>
+
+<style>
+  .page-content {
+    min-height: 60vh;
+    padding-top: 120px; /* Offset for fixed navbar */
+    padding-bottom: var(--space-2xl);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .prose {
+    color: var(--color-navy);
+    line-height: 1.7;
+    font-size: 1.05rem;
+  }
+  
+  /* Use global selector inside prose for markdown injected tags */
+  .prose :global(h1) {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 2rem;
+    color: var(--color-navy);
+  }
+  
+  .prose :global(h2) {
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-navy);
+  }
+  
+  .prose :global(p) {
+    margin-bottom: 1.25rem;
+    opacity: 0.9;
+  }
+  
+  .prose :global(ul), .prose :global(ol) {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    opacity: 0.9;
+  }
+  
+  .prose :global(li) {
+    margin-bottom: 0.5rem;
+  }
+  
+  .prose :global(a) {
+    color: var(--color-navy);
+    text-decoration: underline;
+    transition: color var(--transition);
+  }
+  
+  .prose :global(a:hover) {
+    color: var(--color-primary-dark);
+  }
+  
+  .prose :global(strong) {
+    font-weight: 700;
+  }
+</style>
