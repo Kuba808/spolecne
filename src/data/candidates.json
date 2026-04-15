@@ -8,44 +8,44 @@
     },
     {
         "position": 2,
+        "name": "Petr Sedláček",
+        "occupation": "dětský lékař",
+        "photo": "/images/candidates/petr_s.png",
+        "isLeader": false
+    },
+    {
+        "position": 3,
         "name": "Kateřina Agnolozzi",
         "occupation": "podnikatelka",
         "photo": "/images/candidates/katerina_a.png",
         "isLeader": false
     },
     {
-        "position": 3,
-        "name": "Karel Franc",
-        "occupation": "podnikatel",
-        "photo": "/images/candidates/karel_f.png",
-        "isLeader": false
-    },
-    {
         "position": 4,
-        "name": "Petr Sedláček",
-        "occupation": "lékař",
-        "photo": "/images/candidates/petr_s.png",
-        "isLeader": false
-    },
-    {
-        "position": 5,
-        "name": "Vojtěch Špaček",
-        "occupation": "student",
-        "photo": "/images/candidates/vojtech_s.png",
-        "isLeader": false
-    },
-    {
-        "position": 6,
         "name": "Jakub Šleis",
         "occupation": "digitální designer",
         "photo": "/images/candidates/jakub_s.png",
         "isLeader": false
     },
     {
-        "position": 7,
+        "position": 5,
+        "name": "Karel Franc",
+        "occupation": "podnikatel",
+        "photo": "/images/candidates/karel_f.png",
+        "isLeader": false
+    },
+    {
+        "position": 6,
         "name": "Eva Novotná",
         "occupation": "kreativní občanka",
         "photo": "/images/candidates/eva_n.png",
+        "isLeader": false
+    },
+    {
+        "position": 7,
+        "name": "Vojtěch Špaček",
+        "occupation": "student",
+        "photo": "/images/candidates/vojtech_s.png",
         "isLeader": false
     },
     {
@@ -64,9 +64,9 @@
     },
     {
         "position": 10,
-        "name": "Stanislav Vebr",
-        "occupation": "účetní",
-        "photo": "/images/candidates/stanislav_v.png",
+        "name": "Zdeněk Lazor",
+        "occupation": "elektrikář",
+        "photo": "/images/candidates/zdenek_l.png",
         "isLeader": false
     },
     {
@@ -78,9 +78,9 @@
     },
     {
         "position": 12,
-        "name": "Zdeněk Lazor",
-        "occupation": "elektrikář",
-        "photo": "/images/candidates/zdenek_l.png",
+        "name": "Stanislav Vebr",
+        "occupation": "účetní",
+        "photo": "/images/candidates/stanislav_v.png",
         "isLeader": false
     },
     {
@@ -113,50 +113,50 @@
     },
     {
         "position": 17,
-        "name": "Antonín Hejniš",
-        "occupation": "číšník",
-        "photo": "/images/candidates/antonin_h.png",
-        "isLeader": false
-    },
-    {
-        "position": 18,
         "name": "Jan Matouš",
         "occupation": "-",
         "photo": "/images/candidates/placeholder.svg",
         "isLeader": false
     },
     {
-        "position": 19,
+        "position": 18,
         "name": "Beáta Hanousková",
         "occupation": "-",
         "photo": "/images/candidates/placeholder.svg",
         "isLeader": false
     },
     {
-        "position": 20,
+        "position": 19,
         "name": "Martin Kubeček",
         "occupation": "-",
         "photo": "/images/candidates/placeholder.svg",
         "isLeader": false
     },
     {
-        "position": 21,
+        "position": 20,
         "name": "Lukáš Rabas",
         "occupation": "-",
         "photo": "/images/candidates/placeholder.svg",
         "isLeader": false
     },
     {
+        "position": 21,
+        "name": "",
+        "occupation": "",
+        "photo": "/images/candidates/placeholder.svg",
+        "isLeader": false
+    },
+    {
         "position": 22,
-        "name": "-",
-        "occupation": "-",
+        "name": "",
+        "occupation": "",
         "photo": "/images/candidates/placeholder.svg",
         "isLeader": false
     },
     {
         "position": 23,
-        "name": "-",
-        "occupation": "-",
+        "name": "",
+        "occupation": "",
         "photo": "/images/candidates/placeholder.svg",
         "isLeader": false
     }
