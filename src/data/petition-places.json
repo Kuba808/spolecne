@@ -1,23 +1,23 @@
 [
     {
-        "name": "Bude upřesněno",
-        "address": "-",
-        "lat": 50.5862,
-        "lng": 16.3322,
-        "hours": "-"
+        "name": "Domácí potřeby (náměstí)",
+        "address": "Kasárenská 125, 550 01 Broumov 1",
+        "lat": 50.58558516185704,
+        "lng": 16.332862232296282,
+        "hours": "8.00-17.00"
     },
     {
-        "name": "Bude upřesněno",
-        "address": "-",
-        "lat": 50.5855,
-        "lng": 16.3340,
-        "hours": "-"
+        "name": "Zdravotnické potřeby Sokol",
+        "address": "Protifaš. bojovníků 206, 550 01 Broumov",
+        "lat": 50.58432724800219,
+        "lng": 16.33286624889161,
+        "hours": "8.00-17.00"
     },
     {
-        "name": "Bude upřesněno",
-        "address": "-",
-        "lat": 50.5870,
-        "lng": 16.3300,
-        "hours": "-"
+        "name": "Café Dientzenhofer",
+        "address": "Klášterní 1, 550 01 Broumov",
+        "lat": 50.58614490956307,
+        "lng": 16.33380324148159,
+        "hours": "8.00-18.00"
     }
 ]
