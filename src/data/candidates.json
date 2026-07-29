@@ -8,156 +8,156 @@
     },
     {
         "position": 2,
-        "name": "Petr Sedláček",
-        "occupation": "dětský lékař",
-        "photo": "/images/candidates/petr_s.png",
-        "isLeader": false
-    },
-    {
-        "position": 3,
         "name": "Kateřina Agnolozzi",
         "occupation": "podnikatelka",
         "photo": "/images/candidates/katerina_a.png",
         "isLeader": false
     },
     {
+        "position": 3,
+        "name": "Petr Sedláček",
+        "occupation": "dětský lékař",
+        "photo": "/images/candidates/petr_s.png",
+        "isLeader": false
+    },
+    {
         "position": 4,
-        "name": "Jakub Šleis",
-        "occupation": "digitální designer",
-        "photo": "/images/candidates/jakub_s.png",
+        "name": "Martin Minařík",
+        "occupation": "-",
+        "photo": "/images/candidates/martin_m.png",
         "isLeader": false
     },
     {
         "position": 5,
-        "name": "Karel Franc",
-        "occupation": "podnikatel",
-        "photo": "/images/candidates/karel_f.png",
-        "isLeader": false
-    },
-    {
-        "position": 6,
-        "name": "Eva Novotná",
-        "occupation": "kreativní občanka",
-        "photo": "/images/candidates/eva_n.png",
-        "isLeader": false
-    },
-    {
-        "position": 7,
-        "name": "Vojtěch Špaček",
-        "occupation": "student",
-        "photo": "/images/candidates/vojtech_s.png",
-        "isLeader": false
-    },
-    {
-        "position": 8,
-        "name": "Anna Běhalová",
-        "occupation": "učetní",
-        "photo": "/images/candidates/anna_b.png",
-        "isLeader": false
-    },
-    {
-        "position": 9,
-        "name": "Milan Sokol",
-        "occupation": "podnikatel",
-        "photo": "/images/candidates/milan_s.png",
-        "isLeader": false
-    },
-    {
-        "position": 10,
-        "name": "Zdeněk Lazor",
-        "occupation": "elektrikář",
-        "photo": "/images/candidates/zdenek_l.png",
-        "isLeader": false
-    },
-    {
-        "position": 11,
-        "name": "Lucie Keazor",
-        "occupation": "podnikatelka",
-        "photo": "/images/candidates/lucie_k.png",
-        "isLeader": false
-    },
-    {
-        "position": 12,
-        "name": "Stanislav Vebr",
-        "occupation": "účetní",
-        "photo": "/images/candidates/stanislav_v.png",
-        "isLeader": false
-    },
-    {
-        "position": 13,
         "name": "Helena Sejkorová",
         "occupation": "správa nemovitostí",
         "photo": "/images/candidates/helena_s.png",
         "isLeader": false
     },
     {
-        "position": 14,
-        "name": "Tomáš Brandejs",
-        "occupation": "obchodní zástupce",
-        "photo": "/images/candidates/tomas_b.png",
-        "isLeader": false
-    },
-    {
-        "position": 15,
-        "name": "Michal Černoch",
-        "occupation": "vedoucí lomu",
-        "photo": "/images/candidates/michal_c.png",
-        "isLeader": false
-    },
-    {
-        "position": 16,
-        "name": "Andrea Gombarčíková",
-        "occupation": "referentka prodeje",
-        "photo": "/images/candidates/andrea_g.png",
-        "isLeader": false
-    },
-    {
-        "position": 17,
+        "position": 6,
         "name": "Jan Matouš",
         "occupation": "-",
         "photo": "/images/candidates/jan_m.png",
         "isLeader": false
     },
     {
-        "position": 18,
-        "name": "Beáta Hanousková",
-        "occupation": "-",
-        "photo": "/images/candidates/beata_h.png",
+        "position": 7,
+        "name": "Lucie Keazor",
+        "occupation": "podnikatelka",
+        "photo": "/images/candidates/lucie_k.png",
         "isLeader": false
     },
     {
-        "position": 19,
-        "name": "Martin Kubeček",
-        "occupation": "-",
-        "photo": "/images/candidates/martin_k.png",
+        "position": 8,
+        "name": "Jakub Šleis",
+        "occupation": "digitální designer",
+        "photo": "/images/candidates/jakub_s.png",
         "isLeader": false
     },
     {
-        "position": 20,
+        "position": 9,
+        "name": "Petr Falta",
+        "occupation": "-",
+        "photo": "/images/candidates/petr_f.png",
+        "isLeader": false
+    },
+    {
+        "position": 10,
+        "name": "Eva Novotná",
+        "occupation": "kreativní občanka",
+        "photo": "/images/candidates/eva_n.png",
+        "isLeader": false
+    },
+    {
+        "position": 11,
         "name": "Lukáš Rabas",
         "occupation": "-",
         "photo": "/images/candidates/lukas_r.png",
         "isLeader": false
     },
     {
+        "position": 12,
+        "name": "Jitka Marková",
+        "occupation": "-",
+        "photo": "/images/candidates/jitka_m.png",
+        "isLeader": false
+    },
+    {
+        "position": 13,
+        "name": "Martin Kubeček",
+        "occupation": "-",
+        "photo": "/images/candidates/martin_k.png",
+        "isLeader": false
+    },
+    {
+        "position": 14,
+        "name": "Anna Běhalová",
+        "occupation": "účetní",
+        "photo": "/images/candidates/anna_b.png",
+        "isLeader": false
+    },
+    {
+        "position": 15,
+        "name": "Milan Sokol",
+        "occupation": "podnikatel",
+        "photo": "/images/candidates/milan_s.png",
+        "isLeader": false
+    },
+    {
+        "position": 16,
+        "name": "Veronika Soumarová",
+        "occupation": "-",
+        "photo": "/images/candidates/veronika_s.png",
+        "isLeader": false
+    },
+    {
+        "position": 17,
+        "name": "Stanislav Vebr",
+        "occupation": "specialista daní a účetnictví",
+        "photo": "/images/candidates/stanislav_v.png",
+        "isLeader": false
+    },
+    {
+        "position": 18,
+        "name": "Zdeněk Lazor",
+        "occupation": "elektrikář",
+        "photo": "/images/candidates/zdenek_l.png",
+        "isLeader": false
+    },
+    {
+        "position": 19,
+        "name": "Beáta Hanousková",
+        "occupation": "-",
+        "photo": "/images/candidates/beata_h.png",
+        "isLeader": false
+    },
+    {
+        "position": 20,
+        "name": "Michal Černoch",
+        "occupation": "vedoucí lomu",
+        "photo": "/images/candidates/michal_c.png",
+        "isLeader": false
+    },
+    {
         "position": 21,
-        "name": "",
-        "occupation": "",
-        "photo": "/images/candidates/placeholder.svg",
+        "name": "Karel Franc",
+        "occupation": "podnikatel",
+        "photo": "/images/candidates/karel_f.png",
         "isLeader": false
     },
     {
         "position": 22,
-        "name": "",
-        "occupation": "",
-        "photo": "/images/candidates/placeholder.svg",
+        "name": "Andrea Gombarčíková",
+        "occupation": "referentka prodeje",
+        "photo": "/images/candidates/andrea_g.png",
         "isLeader": false
     },
     {
         "position": 23,
-        "name": "",
-        "occupation": "",
-        "photo": "/images/candidates/placeholder.svg",
+        "name": "Tomáš Brandejs",
+        "occupation": "obchodní zástupce",
+        "photo": "/images/candidates/tomas_b.png",
         "isLeader": false
     }
 ]

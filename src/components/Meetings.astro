@@ -1,0 +1,217 @@
+---
+/**
+ * Meetings – call for citizens' ideas + list of upcoming meeting dates
+ * Replaces the former Petition section (signatures collected).
+ */
+import siteData from '../data/site.json';
+import meetings from '../data/meetings.json';
+
+/** "2026-08-14" -> "14. 8." (no locale/ICU dependency at build time) */
+function formatDate(iso) {
+  const [, month, day] = iso.split('-');
+  return `${Number(day)}. ${Number(month)}.`;
+}
+
+/** local date as YYYY-MM-DD, comparable with the ISO dates in meetings.json */
+function todayISO(d = new Date()) {
+  const pad = (n) => String(n).padStart(2, '0');
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+}
+
+const today = todayISO();
+const byDate = (a, b) => a.date.localeCompare(b.date);
+const isPast = (meeting) => meeting.date < today;
+
+/** upcoming first, past ones appended at the end – both chronologically */
+const sorted = [
+  ...meetings.filter((m) => !isPast(m)).sort(byDate),
+  ...meetings.filter(isPast).sort(byDate),
+];
+---
+
+<section class="section" id="meetings">
+  <!-- keeps older /#petition links from social posts landing on this section -->
+  <span id="petition" class="anchor-alias" aria-hidden="true"></span>
+  <div class="container">
+    <div class="section__header">
+      <h2>{siteData.meetings.title}</h2>
+      <p>{siteData.meetings.text}</p>
+      <div class="meetings__actions">
+        <a href={`mailto:${siteData.meetings.email}`} class="btn btn--primary">
+          <span>✉️</span> {siteData.meetings.btnLabel}
+        </a>
+        <a href={`mailto:${siteData.meetings.email}`} class="meetings__email">{siteData.meetings.email}</a>
+      </div>
+    </div>
+
+    <div class="meetings__places">
+      <h3>{siteData.meetings.placesTitle}</h3>
+      <ul class="meetings__list">
+        {sorted.map((meeting) => (
+          <li
+            class:list={['meetings__item', { 'meetings__item--past': isPast(meeting) }]}
+            data-date={meeting.date}
+          >
+            <span class="meetings__date">{formatDate(meeting.date)}</span>
+            <strong>{meeting.title || meeting.place}</strong>
+            {meeting.title && meeting.place && <span>{meeting.place}</span>}
+            <span class="meetings__time">🕐 {meeting.time}</span>
+            <span class="meetings__badge">Proběhlo</span>
+          </li>
+        ))}
+      </ul>
+      <p class="meetings__note" set:html={siteData.meetings.note}></p>
+    </div>
+  </div>
+</section>
+
+<!--
+  The build stamps "past" and the ordering at build time; this re-checks in the
+  visitor's browser, so dates grey out and drop to the end on the right day even
+  without a rebuild.
+-->
+<script is:inline>
+  (() => {
+    const list = document.querySelector('.meetings__list');
+    if (!list) return;
+
+    const d = new Date();
+    const pad = (n) => String(n).padStart(2, '0');
+    const today = `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+
+    const items = Array.from(list.querySelectorAll('.meetings__item[data-date]'));
+    items.forEach((item) => {
+      item.classList.toggle('meetings__item--past', item.dataset.date < today);
+    });
+
+    // appendChild moves nodes, so past items end up last in their original order
+    items
+      .filter((item) => item.classList.contains('meetings__item--past'))
+      .forEach((item) => list.appendChild(item));
+  })();
+</script>
+
+<style>
+  .anchor-alias {
+    display: block;
+    height: 0;
+    scroll-margin-top: 80px;
+  }
+
+  .meetings__actions {
+    margin-top: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xs);
+  }
+
+  .meetings__email {
+    font-weight: 600;
+    color: var(--color-navy);
+    font-size: 0.95rem;
+  }
+
+  .meetings__places {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .meetings__places h3 {
+    margin-bottom: var(--space-sm);
+    text-align: center;
+  }
+
+  .meetings__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-sm);
+  }
+
+  .meetings__item {
+    background: var(--color-white);
+    border-radius: var(--radius-sm);
+    padding: var(--space-sm) var(--space-md);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    border-left: 4px solid var(--color-navy);
+  }
+
+  .meetings__date {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    line-height: 1.1;
+  }
+
+  .meetings__item strong {
+    color: var(--color-navy);
+    font-size: 1rem;
+  }
+
+  .meetings__item span:not(.meetings__date):not(.meetings__badge) {
+    font-size: 0.9rem;
+    color: var(--color-dark);
+    opacity: 0.7;
+  }
+
+  .meetings__time {
+    font-weight: 500;
+    opacity: 0.85 !important;
+  }
+
+  /* --- proběhlé termíny --- */
+  .meetings__badge {
+    display: none;
+    align-self: flex-start;
+    margin-top: 0.4rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 999px;
+    background: rgba(10, 37, 64, 0.08);
+    color: var(--color-navy);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+
+  .meetings__item--past {
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow: none;
+    border-left-color: rgba(10, 37, 64, 0.2);
+  }
+
+  .meetings__item--past .meetings__date {
+    color: var(--color-dark);
+    opacity: 0.45;
+  }
+
+  .meetings__item--past strong {
+    opacity: 0.5;
+  }
+
+  .meetings__item--past span:not(.meetings__badge) {
+    opacity: 0.4 !important;
+  }
+
+  .meetings__item--past .meetings__badge {
+    display: inline-block;
+  }
+
+  .meetings__note {
+    /* global p sets max-width: 70ch, so the block needs centering too */
+    margin: var(--space-md) auto 0;
+    text-align: center;
+    font-size: 0.95rem;
+    opacity: 0.8;
+  }
+
+  .meetings__note :global(a) {
+    color: var(--color-navy);
+    font-weight: 600;
+  }
+</style>
